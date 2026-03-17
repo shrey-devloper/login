@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+<style>
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+    overflow:hidden;
+}
+
+#bg-video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+} 
+
+.login-box{
+    border:2px solid #fff;
+    padding:30px;
+    background:#000;
+    color:#fff;
+    text-align:center;
+    border-radius:8px;
+    box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+.login-box input{
+    background:rgba(255,255,255,0.1);
+    border:1px solid #ccc;
+    color:#fff;
+    padding:8px;
+    width:100%;
+    box-sizing:border-box;
+}
+
+.login-box input[type="submit"],
+.login-box input[type="reset"]{
+    background:#444;
+    border:none;
+    color:#fff;
+    cursor:pointer;
+    width:48%;
+}
+
+.login-box input[type="submit"]:hover,
+.login-box input[type="reset"]:hover{
+    background:#666;
+}
+
+input{
+    margin:8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<video id="bg-video" autoplay muted loop playsinline>
+    <source src="jjk.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<div class="login-box">
+    <h1>Login Page</h1>
+
+    <form type="black"> 
+        <label>Username:</label><br>
+        <input type="text" maxlength="20" required><br>
+
+        <label>Password:</label><br>
+        <input type="password" maxlength="20" required><br><br>
+
+        <input type="submit" value="Login">
+        <input type="reset" value="Clear">
+    </form>
+</div>
+
+</body>
+</html>
